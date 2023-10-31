@@ -15,6 +15,13 @@ describe('EasyBroker', () => {
   const easyBroker = new EasyBroker(apiKey);
   const consoleLogSpy = jest.spyOn(console, 'log');
 
+  describe('When API key is undefined or an empty string', () => {
+    it('should throw an error', async () => {
+      expect(() => new EasyBroker('')).toThrowError('API key is required and cannot be undefined or an empty string.');
+      expect(() => new EasyBroker(undefined)).toThrowError('API key is required and cannot be undefined or an empty string.');
+    });
+  });
+
   describe('getProperties method', () => {
     describe('When the API responds successfully', () => {
       it('should return the properties corresponding to the page and limit', async () => {

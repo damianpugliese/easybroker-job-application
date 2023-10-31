@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
-    "lib": [
-      "ES6",
-      "dom"
-    ],
-    "outDir": "lib",
+    "lib": ["ES6"],
+    "outDir": "./build",
     "removeComments": true,
+    "allowJs": true,
     "target": "ES6",
-    "baseUrl": "./",
+    "module": "commonjs",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "alwaysStrict": true,
@@ -21,6 +19,9 @@
   },
   "include": ["./**/*.ts"],
   "exclude": [
-    "node_modules/**/*"
+    "node_modules/**/*",
+    "jest.config.js",
+    "build",
+    "babel.config.js"
   ]
 }

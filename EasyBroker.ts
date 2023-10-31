@@ -46,6 +46,7 @@ export class EasyBroker implements IEasyBroker {
    */
   async getProperties(page: number = 1, limit: number = 20): Promise<PropertiesResponse> {
     try {
+      console.log(`Getting properties from page: ${page}`)
       const response: AxiosResponse = await this.axiosInstance.get('/properties', {
         params: {
           page,
