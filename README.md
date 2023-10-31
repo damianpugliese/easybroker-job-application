@@ -1,29 +1,53 @@
-> Easyboker job application
+> Easyborker job application
 
-## Inicio Rápido  
+## Instalation
 
-``` bash
-# Instalar dependencias
-npm install (o npm i)
+Before getting started, it is highly recommended having [nvm](https://github.com/creationix/nvm) installed to run the service.
 
-# Correr sólo el Servidor (Express) 
-npm run server
+1. Clone the project
 
-# Correr sólo el Cliente (React) 
-npm run client
+```bash
+$ git clone git@github.com:damianpugliese/easybroker-job-application.git && cd easybroker-job-application
+```
+
+2. Change the `Node.js` version to use the same one used in the project
+
+```bash
+$ nvm install 16
+```
+
+3. Install `npm` dependencies (NPM v8.x)
+
+```bash
+$ npm i
+```
+
+### Run local
+
+It runs the project with nodemon server
+
+```bash
+$ npm run dev
+```
+
+### Run tests
+
+It runs all tests
+
+```bash
+$ npm run test
 ```
 
 ## App Info
 
-### Autor
+### Author
 
 Damián Pugliese
 
-### Fecha
+### Date
 
-30/10/2023
+31/10/2023
 
-### Versión
+### Version
 
 1.0.0
-
