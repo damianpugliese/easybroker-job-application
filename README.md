@@ -1,6 +1,6 @@
 > Easyborker job application
 
-## Instalation
+## Installation
 
 Before getting started, it is highly recommended having [nvm](https://github.com/creationix/nvm) installed to run the service.
 
@@ -24,7 +24,7 @@ Or install node v.16
 $ npm i
 ```
 
-### Creating the .env File
+## Creating the .env File
 
 1. Create a `.env` file in the root of the project.
 
@@ -36,7 +36,7 @@ API_KEY=your_api_key
 
 Make sure to replace `your_api_key` with your actual API key.
 
-### Running Locally
+## Running Locally
 
 To run the program locally using the nodemon server and view the output in the console, use the following command:
 
@@ -44,7 +44,7 @@ To run the program locally using the nodemon server and view the output in the c
 $ npm run dev
 ```
 
-### Running Tests Locally
+## Running Tests Locally
 
 To run the tests locally, use the following command:
 
